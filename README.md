@@ -1,22 +1,20 @@
-# Link Prediction: Comparative Study on CiteSeer and Congress Network
+# Link Prediction Experiments
 
-## Description
-This repository contains experiments for link prediction on two graph types:
-- **CiteSeer** (undirected citation network, 3,327 nodes, 9,104 edges)
-- **Congress Twitter Network** (directed influence network, 475 nodes, 13,289 edges)
+## Overview
+This repository contains experimental code for link prediction on two graph datasets:
+- **CiteSeer** (undirected citation network)
+- **Congress Twitter Network** (directed influence network)
 
-Implemented methods:
-- Heuristics: Common Neighbors (CN), Adamic-Adar (AA)
-- Katz Index with beta grid search
-- DeepWalk (DGL implementation)
-- Node2Vec (node2vec library)
-- GCN (DGL GraphConv)
-- GraphSAGE (DGL SAGEConv)
-- SEAL (PyG implementation, CiteSeer only)
+Implemented methods: CN, AA, Katz, DeepWalk, Node2Vec, GCN, GraphSAGE, SEAL.
 
-## Requirements
-See `requirements.txt`. Python 3.8+ recommended.
+## Contents
+- `experiments.ipynb` - main Jupyter notebook with all experiments
+- `congress_data/` - Congress Twitter Network dataset
+- `*.png` - generated plots (loss curves, hyperparameter tuning)
+- `final_results.csv` - aggregated results table
+- `requirements.txt` - Python dependencies
 
-## Installation
+## Setup
+
 ```bash
 pip install -r requirements.txt
