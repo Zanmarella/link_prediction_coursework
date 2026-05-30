@@ -41,7 +41,6 @@ Experiments are conducted on two datasets:
     ├── deepwalk_tuning_congress.png
     ├── gcn_training_cora.png
     ├── gcn_training_cora_no_features.png
-    ├── gcn_training_congress.png
     └── gcn_training_congress.png
 ```
 
